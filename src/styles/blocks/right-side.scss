@@ -1,23 +1,43 @@
 .right-side {
-  grid-column: 8 / 13;
-  gap: 24px;
+  &__img-container {
+    width: 100%;
+    height: 390px;
+    transform: translateX(-20px);
 
-  background-image: url('../images/slider-2/photo-2.png');
-  width: 100%;
-  height: 100%;
-  background-size: cover;
-  display: flex;
-  align-items: flex-end;
-  padding: 48px;
-  box-sizing: border-box;
+    @include on-tablet {
+      transform: translateX(-41px);
+    }
 
-  @include on-desktop-small {
+    @include on-desktop-small {
+      position: absolute;
+      right: 0;
+      width: 50vw;
+      height: calc(100% - 134px);
+      transform: translateX(0);
+    }
+  }
+
+  &__img {
+    width: 100vw;
+    height: 100%;
+
+    @include on-tablet {
+      width: 100vw;
+    }
+
+    @include on-desktop-small {
+      width: 100%;
+      transform: translateX(0);
+    }
+  }
+
+  &__text-container {
     position: absolute;
-    right: 0;
-    bottom: 0;
-    width: 50vw; /* половина екрану */
-    height: 88vh; /* вся висота */
-    overflow: hidden;
+    bottom: 24px;
+
+    @include on-desktop-small {
+      margin-left: 78px;
+    }
   }
 
   &__content {
@@ -29,6 +49,7 @@
   &__arrows {
     display: flex;
     gap: 16px;
+    margin-bottom: 16px;
   }
 
   &__text {

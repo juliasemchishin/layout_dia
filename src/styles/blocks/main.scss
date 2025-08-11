@@ -1,0 +1,18 @@
+.main {
+  &__content {
+    display: grid;
+
+    padding-block: 120px;
+
+    @include on-tablet {
+      padding-block: 148px;
+    }
+
+    @include on-desktop-small {
+      grid-template-columns: repeat(12, 1fr);
+      column-gap: 24px;
+
+      grid-column: 1 / -1;
+    }
+  }
+}
