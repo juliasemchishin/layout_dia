@@ -6,21 +6,22 @@
   &__content {
     padding-block: 72px;
     display: grid;
-    row-gap: 56px;
+    gap: 56px 24px;
 
     --columns: 2;
-    column-gap: 24px;
+
     grid-template-columns: repeat(var(--columns), 1fr);
 
     @include on-tablet {
       --columns: 6;
-      column-gap: 32px;
+
+      gap: 64px 32px;
       padding-block: 128px;
-      row-gap: 64px;
     }
 
     @include on-desktop-small {
       --columns: 12;
+
       column-gap: 24px;
     }
   }
@@ -37,7 +38,6 @@
       font-size: 52px;
       line-height: 150%;
     }
-
   }
 
   &__items {
@@ -60,11 +60,9 @@
     @include on-desktop-medium {
       column-gap: 177px;
     }
-
   }
 
   &__item {
-
     &-img {
       margin-bottom: 32px;
     }
@@ -79,7 +77,7 @@
 
     &-description {
       margin: 0;
-      font-family: Open Sans, sans-serif;
+      font-family: 'Open Sans', sans-serif;
       font-weight: 400;
       font-size: 14px;
       line-height: 150%;
