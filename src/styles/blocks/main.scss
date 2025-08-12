@@ -3,6 +3,7 @@
     display: grid;
 
     padding-block: 120px;
+    gap: 120px;
 
     @include on-tablet {
       padding-block: 148px;
