@@ -52,6 +52,14 @@
     margin-bottom: 16px;
   }
 
+  &__arrow-hover {
+    @include hover(transform, scale(1.2));
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
   &__text {
     color: $color-white;
 

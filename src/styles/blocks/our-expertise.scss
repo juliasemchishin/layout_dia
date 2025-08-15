@@ -83,5 +83,7 @@
       line-height: 150%;
       color: $second-font-color;
     }
+
+    @include hover(transform, scale(1.05));
   }
 }

@@ -1,4 +1,10 @@
 .main {
+  margin-bottom: 120px;
+
+  @include on-tablet {
+    margin-bottom: 0;
+  }
+
   &__content {
     display: grid;
 

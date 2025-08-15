@@ -5,7 +5,7 @@
 
   @include on-tablet {
     padding-block: 0;
-    padding-bottom: 168px;
+    padding-bottom: 168px + 180px;
   }
 
   @include on-desktop-small {
@@ -14,10 +14,12 @@
 
   @include on-desktop {
     padding-block: 72px;
+    padding-bottom: 72px + 180px;
   }
 
   @include on-desktop-large {
     padding-block: 128px;
+    padding-bottom: 128px + 180px;
   }
 
   .container {
@@ -145,9 +147,17 @@
     }
   }
 
+  &__link {
+    grid-column: 1 / -1;
+
+    @include on-tablet {
+      width: 264px;
+      justify-self: center;
+    }
+  }
+
   &__button {
     width: 100%;
-    grid-column: 1 / -1;
 
     @include on-tablet {
       width: 264px;

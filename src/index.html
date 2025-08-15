@@ -9,7 +9,7 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0"
     />
-    <title>Dia</title>
+    <title>Air</title>
     <link
       rel="preconnect"
       href="https://fonts.googleapis.com"
@@ -31,9 +31,16 @@
       rel="stylesheet"
       href="./styles/main.scss"
     />
+    <link
+      rel="icon"
+      href="images/logo-2/logo.png"
+    />
   </head>
   <body class="page__body">
-    <header class="header">
+    <header
+      class="header"
+      id="home"
+    >
       <div class="container">
         <div class="header__content">
           <div class="menu">
@@ -55,7 +62,7 @@
               <ul class="nav__list">
                 <li class="nav__list-item">
                   <a
-                    href="#"
+                    href="#who-we-are"
                     class="nav__link"
                   >
                     About us
@@ -63,7 +70,7 @@
                 </li>
                 <li class="nav__list-item">
                   <a
-                    href="#"
+                    href="#services"
                     class="nav__link"
                   >
                     Services
@@ -71,7 +78,7 @@
                 </li>
                 <li class="nav__list-item">
                   <a
-                    href="#"
+                    href="#our-expertise"
                     class="nav__link"
                   >
                     Work
@@ -79,7 +86,7 @@
                 </li>
                 <li class="nav__list-item">
                   <a
-                    href="#"
+                    href="#footer"
                     class="nav__link"
                   >
                     Contact Us
@@ -92,8 +99,8 @@
               <ul class="nav__list">
                 <li class="nav__list-item">
                   <a
-                    href="#"
-                    class="nav__link nav__link-hire-us"
+                    href="#footer"
+                    class="nav__link"
                   >
                     Hire us
                   </a>
@@ -126,10 +133,12 @@
                   <img
                     src="../src/images/arrow-left.png"
                     alt="arrow-left"
+                    class="right-side__arrow-hover"
                   />
                   <img
                     src="../src/images/arrow-right.png"
                     alt="arrow-right"
+                    class="right-side__arrow-hover"
                   />
                 </div>
 
@@ -148,12 +157,60 @@
       </div>
     </header>
 
-    <aside></aside>
+    <aside class="page__menu menu-2">
+      <nav class="footer__nav">
+        <ul class="footer__nav-list">
+          <li class="footer__nav-item">
+            <a
+              href="#who-we-are"
+              class="nav__link"
+            >
+              About us
+            </a>
+          </li>
+          <li class="footer__nav-item">
+            <a
+              href="#home"
+              class="nav__link"
+            >
+              Home
+            </a>
+          </li>
+          <li class="footer__nav-item">
+            <a
+              href="#our-expertise"
+              class="nav__link"
+            >
+              Work
+            </a>
+          </li>
+          <li class="footer__nav-item">
+            <a
+              href="#services"
+              class="nav__link"
+            >
+              Services
+            </a>
+          </li>
+          <li class="footer__nav-item">
+            <a
+              href="#footer"
+              class="nav__link"
+            >
+              Contact Us
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </aside>
 
     <main class="main">
       <div class="container">
         <div class="main__content">
-          <section class="who-we-are">
+          <section
+            class="who-we-are"
+            id="who-we-are"
+          >
             <h2 class="who-we-are__title">Who we are</h2>
             <p class="who-we-are__description">
               We embrace a strategic approach to creative ideas. We are
@@ -165,7 +222,10 @@
         </div>
       </div>
 
-      <section class="our-expertise">
+      <section
+        class="our-expertise"
+        id="our-expertise"
+      >
         <div class="container">
           <div class="our-expertise__content">
             <h2 class="our-expertise__title">Our expertise</h2>
@@ -216,7 +276,10 @@
       </section>
 
       <div class="container">
-        <section class="services">
+        <section
+          class="services"
+          id="services"
+        >
           <div class="services__content">
             <div class="services__cards">
               <div class="services__header">
@@ -256,12 +319,7 @@
                       class="services__card-link-img"
                     />
                   </div>
-                  <a
-                    href="#"
-                    class="services__card-link-text"
-                  >
-                    Learn more
-                  </a>
+                  <a href="#our-expertise">Learn more</a>
                 </div>
               </div>
 
@@ -288,12 +346,7 @@
                       class="services__card-link-img"
                     />
                   </div>
-                  <a
-                    href="#"
-                    class="services__card-link-text"
-                  >
-                    Learn more
-                  </a>
+                  <a href="#our-expertise">Learn more</a>
                 </div>
               </div>
 
@@ -320,12 +373,7 @@
                       class="services__card-link-img"
                     />
                   </div>
-                  <a
-                    href="#"
-                    class="services__card-link-text"
-                  >
-                    Learn more
-                  </a>
+                  <a href="#our-expertise">Learn more</a>
                 </div>
               </div>
 
@@ -352,19 +400,17 @@
                       class="services__card-link-img"
                     />
                   </div>
-                  <a
-                    href="#"
-                    class="services__card-link-text"
-                  >
-                    Learn more
-                  </a>
+                  <a href="#our-expertise">Learn more</a>
                 </div>
               </div>
             </div>
           </div>
         </section>
 
-        <section class="what-people-say">
+        <section
+          class="what-people-say"
+          id="what-people-say"
+        >
           <div class="what-people-say__header">
             <div class="what-people-say__name">Testimonials</div>
             <h2 class="what-people-say__title">What people say</h2>
@@ -437,7 +483,10 @@
         </section>
       </div>
 
-      <section class="vision-passion">
+      <section
+        class="vision-passion"
+        id="vision-passion"
+      >
         <div class="vision-passion__image">
           <div class="container">
             <div class="vision-passion__content">
@@ -446,15 +495,172 @@
                 We are sure that first-rate job is possible only if all three
                 components are united.
               </p>
-              <button class="button vision-passion__button">Apply</button>
+
+              <a
+                href="#footer"
+                class="vision-passion__link"
+              >
+                <button class="button vision-passion__button">Apply</button>
+              </a>
             </div>
           </div>
         </div>
       </section>
     </main>
 
-    <footer></footer>
+    <footer>
+      <section
+        class="footer"
+        id="footer"
+      >
+        <div class="container">
+          <div class="footer__content">
+            <div class="send-massage">
+              <h2 class="send-massage__title">Send us a message</h2>
+              <form
+                class="send-massage__inputs"
+                onsubmit="this.reset(); return false;"
+              >
+                <input
+                  type="email"
+                  class="input"
+                  placeholder="Your email"
+                  required
+                />
+                <input
+                  type="text"
+                  class="input"
+                  placeholder="Your name"
+                  required
+                />
+                <textarea
+                  class="input input__message"
+                  placeholder="Your message"
+                  required
+                ></textarea>
+                <button class="button send-massage__button">Send</button>
+              </form>
+            </div>
 
+            <div class="contact-us">
+              <h2 class="contact-us__title">Contact us</h2>
+
+              <div class="contact-us__contact">
+                <span class="contact-us__contact-header">Call us</span>
+                <span class="contact-us__contact-number">654 321 987</span>
+              </div>
+
+              <div class="contact-us__contact">
+                <span class="contact-us__contact-header">Visit us</span>
+                <a
+                  class="contact-us__contact-number"
+                  href="https://maps.app.goo.gl/koozELgqAPiSDAQh7"
+                  target="_blank"
+                >
+                  2905 West Drive, Buffalo Grove
+                </a>
+              </div>
+
+              <div class="contact-us__contact">
+                <span class="contact-us__contact-header">Our socials</span>
+                <div class="contact-us__contact-socials">
+                  <a
+                    href="#"
+                    class="contact-us__contact-socials-link"
+                  >
+                    <img
+                      src="images/social-media/facebook.png"
+                      alt="icon facebook"
+                      class="contact-us__contact-socials-img"
+                    />
+                  </a>
+                  <a
+                    href="#"
+                    class="contact-us__contact-socials-link"
+                  >
+                    <img
+                      src="images/social-media/twitter.png"
+                      alt="icon twitter"
+                      class="contact-us__contact-socials-img"
+                    />
+                  </a>
+                  <a
+                    href="#"
+                    class="contact-us__contact-socials-link"
+                  >
+                    <img
+                      src="images/social-media/instagram.png"
+                      alt="icon instagram"
+                      class="contact-us__contact-socials-img"
+                    />
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="footer__bottom">
+              <div class="footer__bottom-logo">
+                <a
+                  href="#"
+                  class="footer__bottom-logo-link"
+                >
+                  <img
+                    src="images/logo-2/logo-2x.png"
+                    alt="logo"
+                    class="footer__bottom-logo-img"
+                  />
+                </a>
+              </div>
+
+              <nav class="footer__nav">
+                <ul class="footer__nav-list">
+                  <li class="footer__nav-item">
+                    <a
+                      href="#who-we-are"
+                      class="nav__link"
+                    >
+                      About us
+                    </a>
+                  </li>
+                  <li class="footer__nav-item">
+                    <a
+                      href="#home"
+                      class="nav__link"
+                    >
+                      Home
+                    </a>
+                  </li>
+                  <li class="footer__nav-item">
+                    <a
+                      href="#our-expertise"
+                      class="nav__link"
+                    >
+                      Work
+                    </a>
+                  </li>
+                  <li class="footer__nav-item">
+                    <a
+                      href="#services"
+                      class="nav__link"
+                    >
+                      Services
+                    </a>
+                  </li>
+                  <li class="footer__nav-item">
+                    <a
+                      href="#footer"
+                      class="nav__link"
+                    >
+                      Contact Us
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </section>
+    </footer>
     <script src="scripts/main.js"></script>
   </body>
 </html>

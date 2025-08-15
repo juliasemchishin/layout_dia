@@ -85,6 +85,20 @@
       align-items: center;
       gap: 16px;
 
+      @include hover(transform, scale(1.1));
+
+      &:hover {
+        cursor: pointer;
+      }
+
+      & > a {
+        text-decoration: none;
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 100%;
+        color: #334563;
+      }
+
       &-arrow {
         display: inline-flex;
         border-radius: 50%;
@@ -105,20 +119,6 @@
         &-red {
           background-color: $services-red;
         }
-
-        &:hover {
-          transition: 0.3s;
-          transform: scale(1.2);
-          cursor: pointer;
-        }
-      }
-
-      &-text {
-        text-decoration: none;
-        font-weight: 600;
-        font-size: 15px;
-        line-height: 100%;
-        color: #334563;
       }
     }
   }
@@ -165,6 +165,8 @@
 .services__card-1 {
   grid-column: 1 / -1;
 
+  @include hover(transform, scale(1.1));
+
   @include on-tablet {
     grid-column: 1 / 4;
   }
@@ -172,11 +174,17 @@
   @include on-desktop-small {
     grid-column: 7 /10;
     transform: translateY(140px);
+
+    &:hover {
+      transform: translateY(140px) scale(1.1);
+    }
   }
 }
 
 .services__card-2 {
   grid-column: 1 / -1;
+
+  @include hover(transform, scale(1.1));
 
   @include on-tablet {
     grid-column: 4 / -1;
@@ -190,6 +198,8 @@
 }
 
 .services__card-3 {
+  @include hover(transform, scale(1.1));
+
   grid-column: 1 / -1;
 
   @include on-tablet {
@@ -199,11 +209,17 @@
   @include on-desktop-small {
     grid-column: 7 /10;
     transform: translateY(140px);
+
+    &:hover {
+      transform: translateY(140px) scale(1.1);
+    }
   }
 }
 
 .services__card-4 {
   grid-column: 1 / -1;
+
+  @include hover(transform, scale(1.1));
 
   @include on-tablet {
     grid-column: 4 / -1;

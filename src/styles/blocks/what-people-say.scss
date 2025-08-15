@@ -72,6 +72,8 @@
       grid-column: span 4;
     }
 
+    @include hover(transform, scale(1.05));
+
     &-quote {
       margin-bottom: 8px;
       margin-top: 65px;
