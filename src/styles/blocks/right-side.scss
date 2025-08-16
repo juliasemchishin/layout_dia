@@ -9,10 +9,8 @@
     }
 
     @include on-desktop-small {
-      position: absolute;
-      right: 0;
-      width: 50vw;
-      height: calc(100% - 134px);
+      width: calc(50vw - 12px);
+      height: calc(100vh - (96px + 28px));
       transform: translateX(0);
     }
   }
