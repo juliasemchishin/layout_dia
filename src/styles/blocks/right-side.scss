@@ -15,10 +15,19 @@
     }
 
     @include on-desktop-small {
-      width: 50vw;
+      width: calc(100% + 54px);
       height: calc(100vh - (96px + 28px));
       max-height: 680px;
-      transform: translateX(-12px);
+      min-height: 680px;
+      transform: translateX(0);
+    }
+
+    @include on-desktop {
+      width: calc(100% + 227px);
+    }
+
+    @include on-desktop-large {
+      width: calc(100% + 707px);
     }
   }
 
@@ -36,7 +45,8 @@
     }
 
     @include on-desktop-small {
-      width: 50vw;
+      width: 100%;
+      transform: translateX(0);
     }
   }
 
