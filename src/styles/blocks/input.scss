@@ -22,3 +22,14 @@
     border-bottom: 2px solid $color-white;
   }
 }
+
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus {
+  border-bottom: 1px solid $color-white;
+  -webkit-text-fill-color: $color-white;
+  -webkit-box-shadow: 0 0 0 1000px $background-color inset;
+}
