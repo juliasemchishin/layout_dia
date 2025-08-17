@@ -189,6 +189,10 @@
   @include on-tablet {
     grid-column: 4 / -1;
     transform: translateY(-140px);
+
+    &:hover {
+      transform: translateY(-140px) scale(1.1);
+    }
   }
 
   @include on-desktop-small {
@@ -224,6 +228,10 @@
   @include on-tablet {
     grid-column: 4 / -1;
     transform: translateY(-140px);
+
+    &:hover {
+      transform: translateY(-140px) scale(1.1);
+    }
   }
 
   @include on-desktop-small {
