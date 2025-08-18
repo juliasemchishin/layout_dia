@@ -198,6 +198,10 @@
   @include on-desktop-small {
     grid-column: 10 /13;
     transform: translateY(0);
+
+    &:hover {
+      transform: translateY(0) scale(1.1);
+    }
   }
 }
 
@@ -237,5 +241,9 @@
   @include on-desktop-small {
     grid-column: 10 /13;
     transform: translateY(0);
+
+    &:hover {
+      transform: translateY(0) scale(1.1);
+    }
   }
 }
